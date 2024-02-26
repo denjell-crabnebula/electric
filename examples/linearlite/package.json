@@ -29,7 +29,11 @@
     "format": "prettier --write --loglevel warn .",
     "preview": "vite preview",
     "vite": "vite",
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "mobile:android:init": "tauri android init",
+    "mobile:android:run": "tauri android dev --no-dev-server-wait",
+    "mobile:ios:init": "tauri ios init",
+    "mobile:ios:run": "tauri ios dev --no-dev-server-wait"
   },
   "dependencies": {
     "@firefox-devtools/react-contextmenu": "^5.1.0",
@@ -38,8 +42,8 @@
     "@svgr/plugin-jsx": "^8.1.0",
     "@svgr/plugin-svgo": "^8.1.0",
     "@tailwindcss/forms": "^0.5.6",
-    "@tauri-apps/api": "^2.0.0-beta.0",
-    "@tauri-apps/plugin-shell": "^2.0.0-beta.0",
+    "@tauri-apps/api": "^2.0.0-beta.3",
+    "@tauri-apps/plugin-shell": "^2.0.0-beta.1",
     "@tiptap/extension-collaboration": "^2.1.13",
     "@tiptap/extension-collaboration-cursor": "^2.1.13",
     "@tiptap/extension-mention": "^2.1.13",
@@ -57,6 +61,7 @@
     "dayjs": "^1.11.9",
     "electric-sql": "^0.9.3",
     "fractional-indexing": "^3.2.0",
+    "internal-ip": "^8.0.0",
     "jsonwebtoken": "^9.0.2",
     "lodash.debounce": "^4.0.8",
     "react": "^18.2.0",

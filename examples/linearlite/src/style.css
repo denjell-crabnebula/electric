@@ -5,6 +5,11 @@ body {
   font-size: 12px;
   @apply font-medium text-gray-600;
 }
+@supports (-webkit-touch-callout: none) {
+  body {
+    margin-top: 120px!important;
+  }
+}
 
 @font-face {
   font-family: 'Inter UI';

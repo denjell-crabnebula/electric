@@ -68,13 +68,13 @@ const App = () => {
           console.log(`Synced in ${timeToSync}ms from page load`)
         }
       } catch (error) {
-        if (
+        /*if (
           (error as Error).message.startsWith(
             "Local schema doesn't match server's"
           )
         ) {
           deleteDB()
-        }
+        }*/
         throw error
       }
     }

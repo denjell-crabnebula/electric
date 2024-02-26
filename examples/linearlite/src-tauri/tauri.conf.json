@@ -1,10 +1,10 @@
 {
-  "productName": "Linearlite",
+  "productName": "linearlite",
   "version": "0.0.0",
-  "identifier": "com.tauri.dev",
+  "identifier": "com.linearlite.dev",
   "build": {
     "beforeDevCommand": "npm run dev",
-    "devUrl": "http://localhost:1420",
+    "devUrl": "http://localhost:1337",
     "beforeBuildCommand": "npm run build",
     "frontendDist": "../dist"
   },
@@ -12,7 +12,8 @@
       {
         "title": "Linearlite",
         "width": 1200,
-        "height": 800
+        "height": 800,
+        "alwaysOnTop": true
       }
     ],
     "security": {
@@ -28,6 +29,9 @@
       "icons/128x128@2x.png",
       "icons/icon.icns",
       "icons/icon.ico"
-    ]
+    ],
+    "iOS": {
+      "developmentTeam": "demo"
+    }
   }
 }
